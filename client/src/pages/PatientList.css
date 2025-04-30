@@ -1,0 +1,61 @@
+.patient-list-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .patient-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2d6cdf;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .clock {
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .no-data {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    margin-top: 40px;
+  }
+  
+  .patient-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .patient-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-left: 4px solid #2d6cdf;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .patient-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .patient-card h3 {
+    margin: 0 0 10px;
+    color: #2d6cdf;
+  }
+  
+  .patient-card p {
+    margin: 6px 0;
+    font-size: 15px;
+  }
+  
